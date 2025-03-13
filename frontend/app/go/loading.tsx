@@ -5,7 +5,7 @@ export default function FreeNftLoading() {
     <div className="flex flex-col items-center justify-center min-h-[60vh] space-y-4">
       <Loader2 className="h-12 w-12 animate-spin text-primary" />
       <p className="text-lg text-muted-foreground animate-pulse">
-        Chargement de la page "Lancez-vous"
+        Chargement de la page &quot;Lancez-vous&quot;
       </p>
     </div>
   );
