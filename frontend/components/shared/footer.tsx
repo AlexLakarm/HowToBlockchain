@@ -23,9 +23,9 @@ export default function Footer() {
           rangeSpeed={0}
           baseSpeed={0}
         >
-          {/* Titre et tagline - masqués en mobile */}
-          <div className="hidden md:block">
-            <h2 className="text-2xl md:text-6xl font-bold text-center text-white">
+          {/* Titre et tagline */}
+          <div className="block">
+            <h2 className="text-3xl md:text-6xl font-bold text-center text-white">
               <span className="font-thin">Stamina</span>{" "}
               <span className="font-bold">Dev</span>
             </h2>
