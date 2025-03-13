@@ -42,7 +42,7 @@ const Intro: FC<IntroProps> = () => {
             <Link href="/concepts" className="mb-10">
                 <Button variant="default" className="font-bold">
                     <span className={quicksand.className}>
-                        Concepts
+                        Concepts fondamentaux
                     </span>
                 </Button>
             </Link>

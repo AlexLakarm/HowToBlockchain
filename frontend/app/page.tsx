@@ -7,6 +7,7 @@ import Wallet from "@/components/shared/wallet";
 import Crypto from "@/components/shared/crypto";
 import NFT from "@/components/shared/nft";
 import AvantInvest from "@/components/shared/avantinvest";
+import LancezVous from '@/components/shared/lancezvous';
 
 export default function Home() {
   useEffect(() => {
@@ -27,6 +28,7 @@ export default function Home() {
         <Crypto />
         <NFT />
         <AvantInvest />
+        <LancezVous />
       </div>
     </main>
   );

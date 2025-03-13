@@ -17,7 +17,7 @@ const inter = Inter({
   weight: ['400']
 });
 
-export default function WalletPage() {
+export default function LancezVousPage() {
   return (
     <main className="container mx-auto">
       <HeaderMain />
@@ -36,7 +36,7 @@ export default function WalletPage() {
           {/* Contenu principal */}
           <div>
             <h1 className={`${quicksand.className} text-3xl md:text-4xl font-bold text-center mb-8`}>
-              Utiliser un wallet pour naviguer dans le web3
+              Vous êtes prêts ? Lancez-vous !
             </h1>
 
             {/* Nouvelle section : Qu'est-ce qu'un wallet */}

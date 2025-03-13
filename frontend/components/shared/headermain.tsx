@@ -20,7 +20,7 @@ const navigation = [
   { name: 'Vos premières cryptos', href: '/freecrypto', icon: Gift },
   { name: 'Vos Premiers NFTs', href: '/freenft', icon: Image },
   { name: 'Avant d\'investir', href: '/notionsavancees', icon: GraduationCap },
-  { name: 'Lancez vous', href: '/get-started', icon: Rocket },
+  { name: 'Lancez vous', href: '/go', icon: Rocket },
 ];
 
 const HeaderMain = () => {
@@ -41,8 +41,13 @@ const HeaderMain = () => {
                             href="/" 
                             className={`${roboto.className} text-xl hidden ml-5 md:block hover:opacity-80 transition-opacity lg:text-2xl`}
                         >
-                            <span className="text-2xl font-thin lg:text-3xl">How To </span>
-                            <span className="text-2xl font-bold lg:text-3xl">Blockchain</span>
+                            <div className="flex flex-col">
+                                <div>
+                                    <span className="text-2xl font-thin lg:text-3xl">How To </span>
+                                    <span className="text-2xl font-bold lg:text-3xl">Blockchain</span>
+                                </div>
+                                <span className="text-sm opacity-70 -mt-1">by <span className="text-xl bg-gradient-to-r from-indigo-400 to-purple-500 text-transparent bg-clip-text font-normal">Stamina</span></span>
+                            </div>
                         </Link>
                         
                         {/* Navigation pour desktop */}
@@ -64,10 +69,15 @@ const HeaderMain = () => {
                         {/* Version mobile du titre avec lien */}
                         <Link 
                             href="/"
-                            className={`${roboto.className} text-lg absolute left-1/2 transform -translate-x-1/2 md:hidden hover:opacity-80 transition-opacity`}
+                            className={`${roboto.className} text-lg absolute left-1/2 transform -translate-x-1/2 md:hidden hover:opacity-80 transition-opacity flex flex-col items-center`}
                         >
-                            <span className="text-xl font-thin">How To </span>
-                            <span className="text-xl font-bold">Blockchain</span>
+                            <div className="flex flex-col items-center">
+                                <div>
+                                    <span className="text-2xl font-thin">How To </span>
+                                    <span className="text-2xl font-bold">Blockchain</span>
+                                </div>
+                                <span className="text-sm opacity-70 -mt-1">by <span className="text-lg bg-gradient-to-r from-indigo-400 to-purple-500 text-transparent bg-clip-text font-normal">Stamina</span></span>
+                            </div>
                         </Link>
 
                         {/* Bouton burger */}
