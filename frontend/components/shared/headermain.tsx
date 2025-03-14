@@ -30,33 +30,33 @@ const HeaderMain = () => {
     return (
         <>
             <header className="border-b fixed top-0 left-0 right-0 bg-background z-50">
-                <div className="w-full max-w-[98%] mx-auto px-2 py-2 lg:py-3">
+                <div className="w-full max-w-[98%] mx-auto px-1 py-2 lg:py-3">
                     <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
+                        {/* Groupe de gauche avec toggle et titre */}
+                        <div className="flex items-center gap-4">
                             <ModeToggle />
-                        </div>
-
-                        {/* Titre central avec lien - version desktop */}
-                        <Link 
-                            href="/" 
-                            className={`${roboto.className} text-xl hidden ml-2 md:block hover:opacity-80 transition-opacity lg:text-2xl`}
-                        >
-                            <div className="flex flex-col">
-                                <div>
-                                    <span className="text-2xl font-thin lg:text-3xl">How To </span>
-                                    <span className="text-2xl font-bold lg:text-3xl">Blockchain</span>
+                            {/* Titre avec lien - version desktop */}
+                            <Link 
+                                href="/" 
+                                className={`${roboto.className} text-xl hidden md:block hover:opacity-80 transition-opacity lg:text-2xl`}
+                            >
+                                <div className="flex flex-col">
+                                    <div>
+                                        <span className="text-2xl font-thin lg:text-3xl">How To </span>
+                                        <span className="text-2xl font-bold lg:text-3xl">Blockchain</span>
+                                    </div>
+                                    <span className="text-sm opacity-70 -mt-1">by <span className="text-xl bg-gradient-to-r from-indigo-400 to-purple-500 text-transparent bg-clip-text font-normal">Stamina</span></span>
                                 </div>
-                                <span className="text-sm opacity-70 -mt-1">by <span className="text-xl bg-gradient-to-r from-indigo-400 to-purple-500 text-transparent bg-clip-text font-normal">Stamina</span></span>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                         
                         {/* Navigation pour desktop */}
-                        <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
+                        <nav className="hidden md:flex items-center space-x-2 lg:space-x-4">
                             {navigation.map((item) => (
                                 <Link 
                                     key={item.name}
                                     href={item.href}
-                                    className={`flex items-center gap-1.5 whitespace-nowrap font-medium transition-colors hover:text-primary
+                                    className={`flex items-center gap-1 whitespace-nowrap font-medium transition-colors hover:text-primary
                                         ${pathname === item.href ? 'text-primary' : 'text-muted-foreground'}
                                         text-xs lg:text-sm`}
                                 >
