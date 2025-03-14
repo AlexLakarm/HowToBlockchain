@@ -82,7 +82,9 @@ export default function WalletPage() {
                 Choisir son wallet
               </h2>
               <p className={`${inter.className} text-lg text-muted-foreground mb-6`}>
-                Pour débuter, nous vous recommandons d'installer l'un de ces wallets selon la blockchain que vous souhaitez utiliser :
+                Pour débuter, nous vous recommandons d'installer l'und es wallets ci-dessous selon la blockchain que vous souhaitez utiliser.
+                <span className="font-bold bg-gradient-to-r from-blue-500 to-blue-900 text-transparent bg-clip-text">Solana</span> est la blockchain idéale pour débuter car les la rapidité et le faible coût des transactions rendent l'expérience utilisateur plus fluide.
+                Notre tutoriel est toutefois pour le moment réalisé sur <span className="font-bold bg-gradient-to-r from-blue-500 to-blue-900 text-transparent bg-clip-text">Ethereum</span> pour des raisons de simplicité dedéveloppement, il vous faudra donc un wallet comme Rabby ou MetaMask pour le suivre.
               </p>
               <div className="space-y-6">
                 <div className="flex flex-col items-start gap-2">
