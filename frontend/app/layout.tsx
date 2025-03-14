@@ -5,6 +5,9 @@ import CustomRainbowKitProvider from "@/components/shared/customRainbowKit";
 import Footer from "@/components/shared/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
+import { GTM_ID } from '@/utils/gtm';
+import { PageViewTracker } from '@/components/analytics/page-view-tracker';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +22,34 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className="h-full">
+    <html lang="fr" suppressHydrationWarning className="h-full">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+              });
+            `,
+          }}
+        />
+        <Script
+          id="gtm-load"
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`}
+        />
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,6 +59,7 @@ export default function RootLayout({
           <CustomRainbowKitProvider>
             <div className="flex flex-col min-h-screen">
               <div className="flex-grow">
+                <PageViewTracker />
                 {children}
               </div>
               <Footer />
