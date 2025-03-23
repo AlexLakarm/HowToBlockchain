@@ -21,7 +21,7 @@ type IntroProps = Record<string, never>;
 
 const Intro: FC<IntroProps> = () => {
     return (
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto px-8 md:px-12 pt-8 pb-2">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto px-8 md:px-12 pt-8 pb-2">
             <h2 className={`${quicksand.className} text-3xl md:text-4xl font-bold leading-tight mb-8`}>
                 Votre guide <span className="text-foreground">step by step</span> pour découvrir la 
                 <span className="text-foreground"> blockchain</span> et ses applications.

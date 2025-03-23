@@ -46,7 +46,7 @@ export default function ConceptsPage() {
               Les concepts fondamentaux
             </h1>
 
-            <p className={`${inter.className} text-lg text-muted-foreground leading-relaxed text-justify mb-8`}>
+            <p className={`${inter.className} text-lg text-muted-foreground leading-relaxed mb-8`}>
               La blockchain est un monde nouveau avec son propre vocabulaire et ses concepts uniques. 
               Sans nous perdre dans des détails trop techniques, voici les notions essentielles qu'il 
               vous faut comprendre pour faire vos premiers pas sereinement dans cet écosystème innovant.
@@ -55,19 +55,91 @@ export default function ConceptsPage() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-xl font-semibold">
-                  La blockchain, c'est quoi ?
+                Qu'est-ce que la blockchain ?
                 </AccordionTrigger>
-                <AccordionContent className="text-lg text-muted-foreground leading-relaxed">
-                  Il s'agit d'une technologie qui a gagné en popularité grâce au <span className="font-medium text-foreground">Bitcoin</span>, 
-                  la première cryptomonnaie créée en 2009. Bitcoin repose en effet sur une <span className="font-medium text-foreground">blockchain publique</span>.
-                  <br /><br />
-                  La blockchain est comme un <span className="font-medium text-foreground">livre de comptes numérique</span> partagé entre des milliers 
-                  d'ordinateurs à travers le monde. Chaque page de ce livre contient un groupe de transactions (un <span className="font-medium text-foreground">bloc</span>), 
-                  et une fois une page remplie, elle est attachée de manière permanente à la précédente, formant une <span className="font-medium text-foreground">chaîne de blocs</span>.
-                  <br /><br />
-                  Ce livre est <span className="font-medium text-foreground">public</span> et <span className="font-medium text-foreground">immuable</span>, 
-                  ce qui signifie que tout le monde peut le consulter, mais personne ne peut modifier une page une fois qu'elle est écrite. 
-                  Grâce à cette sécurité et transparence, Bitcoin, la première cryptomonnaie, a pu émerger comme une alternative aux systèmes financiers traditionnels.
+                <AccordionContent className="text-lg text-muted-foreground leading-relaxed">       
+
+                <h2 className={`${quicksand.className} text-xl font-bold my-4`}>Comprendre la blockchain : une révolution discrète mais profonde</h2>
+
+                Aujourd'hui, pour garantir la valeur de la monnaie, d'un actif ou encore pour prouver que nous sommes bien propriétaires d'un bien, nous dépendons systématiquement d'intermédiaires de confiance :
+
+<ul className="list-disc pl-6 mt-2 space-y-2 mb-4">
+  <li>Un <span className="font-medium text-foreground">notaire</span> pour attester que nous sommes propriétaires d'une maison ou d'un terrain,</li>
+  <li>Une <span className="font-medium text-foreground">banque centrale</span> pour garantir qu'un billet de 20 euros vaut réellement 20 euros,</li>
+  <li>Un <span className="font-medium text-foreground">expert en art</span> pour confirmer qu'un tableau est bien l'original,</li>
+  <li>Une <span className="font-medium text-foreground">banque commerciale</span> pour certifier que les 100 euros affichés sur notre compte existent vraiment, même s'il ne s'agit que de lignes numériques.</li>
+</ul>
+
+Ce système fonctionne globalement bien, et il est profondément ancré dans nos habitudes. Mais il n'est pas exempt de failles :
+
+<ul className="list-disc pl-6 mt-2 space-y-2 mb-4">
+  <li>Chaque intermédiaire prend une <span className="font-medium text-foreground">commission ou des frais</span>, parfois invisibles mais omniprésents dans chaque transaction du quotidien.</li>
+  <li>Nous devons accorder notre <span className="font-medium text-foreground">confiance à des acteurs opaques</span>, dont le fonctionnement et les risques ne sont pas toujours visibles. La crise de 2008 en est l'illustration la plus connue : certaines banques détenaient des actifs insolvables, et ne disposaient pas des fonds suffisants pour permettre à leurs clients de retirer leur argent.</li>
+  <li>Plus récemment, en 2023, l'affaire de la <span className="font-medium text-foreground">Silicon Valley Bank (SVB)</span> a montré une nouvelle fois les limites du système. Cette banque californienne, très exposée au secteur technologique, a subi une <span className="font-medium text-foreground">panique bancaire soudaine</span> : les clients se sont précipités pour retirer leurs fonds, et la banque n'a pas pu y faire face, entraînant sa faillite. Cela a rappelé à tous que même des institutions perçues comme solides peuvent vaciller en quelques jours.</li>
+</ul>
+
+Et puis, dans notre monde de plus en plus numérique, une autre problématique se pose : <span className="font-medium text-foreground">comment garantir la propriété d'un actif en ligne ?</span> Une photo, une œuvre numérique, ou même nos données personnelles : qui peut prouver que cela nous appartient vraiment ? Aujourd'hui, il n'existe pas de mécanisme simple pour cela.  
+
+<div className="w-full h-[1px] bg-gray-200 my-8"></div>
+
+<h2 className={`${quicksand.className} text-xl font-bold my-4`}>La blockchain : se passer d'intermédiaire, sans perdre la confiance</h2>
+
+C'est ici qu'intervient la <span className="font-medium text-foreground">blockchain</span>. Son objectif est simple, mais profondément novateur : <span className="font-medium text-foreground">remplacer ces intermédiaires de confiance par un système décentralisé</span>, où la confiance est assurée par la technologie elle-même.<br /><br />
+
+C'est d'ailleurs le point de départ du <span className="font-medium text-foreground">white paper de Bitcoin</span> (le document fondateur publié en 2008) : permettre des <span className="font-medium text-foreground">échanges pair à pair</span>, sans passer par une banque ou un organisme central. Le Bitcoin (BTC), première cryptomonnaie basée sur une blockchain publique, a permis de vulgariser ce concept et de le rendre accessible au plus grand nombre.<br /><br />
+
+Mais concrètement, <span className="font-medium text-foreground">qu'est-ce que la blockchain ?</span>
+
+Il s'agit d'un <span className="font-medium text-foreground">registre numérique partagé</span>, un immense <span className="font-medium text-foreground">livre de comptes</span> distribué entre des milliers d'ordinateurs à travers le monde. Chaque enregistrement (appelé un "bloc") est relié au précédent (literalement "chaine de blocs"), et sécurisé grâce à la <span className="font-medium text-foreground">cryptographie</span>. Ce registre est :
+
+<ul className="list-disc pl-6 mt-2 space-y-2 mb-4">
+  <li><span className="font-medium text-foreground">Infalsifiable</span> : il est quasiment impossible de modifier une information une fois qu'elle est enregistrée.</li>
+  <li><span className="font-medium text-foreground">Immuable</span> : aucune autorité centrale ne peut effacer ou réécrire l'historique.</li>
+  <li><span className="font-medium text-foreground">Transparent</span> : tout est visible publiquement (sur une blockchain publique), ce qui permet de vérifier les transactions en toute indépendance.</li>
+</ul>
+
+Autrement dit, c'est une nouvelle manière de <span className="font-medium text-foreground">prouver et transmettre de la valeur</span>, sans avoir besoin d'un tiers de confiance traditionnel.
+
+<div className="w-full h-[1px] bg-gray-200 my-8"></div>
+
+<h2 className={`${quicksand.className} text-xl font-bold my-4`}>Des usages concrets, déjà en place</h2>
+
+Cela ouvre la voie à des usages inédits, qui ne seraient pas possibles dans le système classique :
+
+<ul className="list-disc pl-6 mt-2 space-y-2 mb-4">
+  <li><span className="font-medium text-foreground">Conserver de la valeur dans un wallet numérique</span>, sans passer par une banque. Un wallet (ou portefeuille numérique) permet de stocker des cryptomonnaies, mais aussi d'autres types d'actifs, sans intermédiaire.</li>
+  <li><span className="font-medium text-foreground">Prouver la propriété d'un bien numérique</span> : image, œuvre d'art, objet dans un jeu vidéo… Ces actifs peuvent être échangés, vendus, achetés, et leur authenticité est garantie par la blockchain.</li>
+  <li><span className="font-medium text-foreground">Participer à la gouvernance de projets collectifs</span>, grâce au vote décentralisé. On peut par exemple voter sur des décisions importantes dans une organisation, avec un système sécurisé, transparent et proportionnel à sa participation.</li>
+  <li><span className="font-medium text-foreground">Créer des identités numériques vérifiables</span> sans dépendre d'un fournisseur centralisé.</li>
+  <li><span className="font-medium text-foreground">Suivre l'origine et la traçabilité d'un produit</span> dans une chaîne d'approvisionnement (ex. : secteur agroalimentaire ou industrie du luxe).</li>
+  <li><span className="font-medium text-foreground">Financer des projets de manière collective</span> (crowdfunding décentralisé), sans plateforme intermédiaire.</li>
+</ul>
+
+<div className="w-full h-[1px] bg-gray-200 my-8"></div>
+
+<h2 className={`${quicksand.className} text-xl font-bold my-4`}>Vers un nouvel âge du web : le Web3</h2>
+
+La blockchain s'inscrit dans une <span className="font-medium text-foreground">évolution naturelle du web</span> :
+
+<ol className="list-decimal pl-6 mt-2 space-y-2 mb-4">
+  <li><span className="font-medium text-foreground">Web 1.0</span> : nous pouvions <span className="font-medium text-foreground">lire</span> des contenus (années 90-2000).</li>
+  <li><span className="font-medium text-foreground">Web 2.0</span> : nous avons commencé à <span className="font-medium text-foreground">interagir et publier</span> via les réseaux sociaux, blogs, forums.</li>
+  <li><span className="font-medium text-foreground">Web3</span> : désormais, nous pouvons <span className="font-medium text-foreground">posséder nos données et nos créations</span>, sans dépendre d'une plateforme ou d'une entreprise.</li>
+</ol>
+
+C'est une révolution discrète, mais profonde. Dans un monde numérique où les données ont une valeur immense – et souvent captée par quelques géants du web –, la blockchain redonne le <span className="font-medium text-foreground">contrôle aux utilisateurs</span>.
+
+<div className="w-full h-[1px] bg-gray-200 my-8"></div>
+
+<h2 className={`${quicksand.className} text-xl font-bold my-4`}>Un futur déjà en marche</h2>
+
+Aujourd'hui, la blockchain permet déjà de gérer son argent, d'investir, de jouer, de créer… Elle est souvent vue à travers le prisme de la spéculation, car ce fut l'un des premiers usages visibles. Mais son <span className="font-medium text-foreground">potentiel va bien au-delà</span>, et demain, elle sera partout — sans même que les utilisateurs s'en rendent compte.<br /><br />
+
+Comme pour Internet ou le GPS, la <span className="font-medium text-foreground">technologie sous-jacente tend à s'effacer</span> pour ne laisser place qu'à l'expérience utilisateur. Nous consulterons des sites web, utiliserons des services, et derrière, nos interactions seront sécurisées et authentifiées par une blockchain… sans que nous ayons besoin de le savoir.<br /><br />
+
+<div className="w-full h-[1px] bg-gray-200 my-8"></div>
+
+La blockchain n'est pas une mode passagère, ni un simple outil de spéculation. C'est <span className="font-medium text-foreground">un changement d'infrastructure</span>, une nouvelle manière de faire circuler la confiance dans un monde numérique.
                 </AccordionContent>
               </AccordionItem>
 
@@ -103,24 +175,30 @@ export default function ConceptsPage() {
                   Qu'est-ce que ça change ?
                 </AccordionTrigger>
                 <AccordionContent className="text-lg text-muted-foreground leading-relaxed">
-                  Prenons l'exemple de la <span className="font-medium text-foreground">Finance Décentralisée (DeFi)</span> qui illustre parfaitement les avantages de la blockchain :
+                  La <span className="font-medium text-foreground">Finance Décentralisée (DeFi)</span> illustre parfaitement le potentiel transformateur de la blockchain pour le secteur financier :
                   <br /><br />
-                  • <span className="font-medium text-foreground">Accessibilité universelle</span> : Contrairement à la finance traditionnelle, 
-                  la DeFi est accessible à tous, sans discrimination. Il suffit d'une connexion internet et d'un portefeuille numérique.
+                  • <span className="font-medium text-foreground">Innovation technologique</span> : La DeFi apporte de nouvelles solutions 
+                  pour moderniser les services financiers. L'automatisation via les smart contracts permet d'optimiser de nombreux 
+                  processus traditionnels.
                   <br /><br />
-                  • <span className="font-medium text-foreground">Égalité des opportunités</span> : En finance traditionnelle, les produits financiers 
-                  les plus sophistiqués sont souvent réservés aux clients fortunés. Dans la DeFi, les mêmes opportunités sont 
-                  disponibles pour tous, que vous investissiez 10€ ou 10 000€.
+                  • <span className="font-medium text-foreground">Efficacité opérationnelle</span> : La technologie blockchain permet 
+                  d'automatiser et de simplifier de nombreuses opérations financières, réduisant ainsi les coûts opérationnels 
+                  et les délais de traitement.
                   <br /><br />
-                  • <span className="font-medium text-foreground">Désintermédiation</span> : La suppression des intermédiaires (banques, courtiers) 
-                  réduit les coûts et accélère les transactions. Un transfert international qui prend plusieurs jours et coûte cher 
-                  en frais bancaires peut être réalisé en quelques minutes pour une fraction du coût.
+                  • <span className="font-medium text-foreground">Interopérabilité mondiale</span> : La blockchain facilite 
+                  les transactions internationales en permettant des transferts rapides et sécurisés, 24/7, 
+                  avec une traçabilité complète.
                   <br /><br />
-                  • <span className="font-medium text-foreground">Transparence totale</span> : Toutes les transactions sont publiques et vérifiables 
-                  par n'importe qui, contrairement aux systèmes financiers traditionnels où les opérations se déroulent en coulisses. 
-                  C'est ce manque de transparence qui a conduit à la crise financière de 2008, accélérant la naissance du Bitcoin.
+                  • <span className="font-medium text-foreground">Transparence et sécurité</span> : Toutes les transactions 
+                  sont enregistrées de manière immuable et vérifiable, renforçant ainsi la confiance dans le système. 
+                  Cette transparence native contribue à la prévention des fraudes et à une meilleure gestion des risques.
                   <br /><br />
-                  La blockchain permet donc de révolutionner la finance, en la rendant plus accessible, équitable et efficace.
+                  • <span className="font-medium text-foreground">Nouveaux modèles économiques</span> : La technologie blockchain 
+                  ouvre la voie à de nouveaux produits et services financiers innovants, créant des opportunités de croissance 
+                  pour l'ensemble du secteur.
+                  <br /><br />
+                  La blockchain représente ainsi une évolution majeure pour le secteur financier, permettant d'améliorer 
+                  l'efficacité des services tout en renforçant la sécurité et la traçabilité des opérations.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
@@ -198,13 +276,12 @@ export default function ConceptsPage() {
                   d'intermédiaire comme une banque.
                   <br /><br />
                   Les cryptomonnaies présentent plusieurs avantages clés :
-                  <ul className="list-disc pl-6 mt-2 space-y-2">
+                  <ul className="list-disc pl-6 mt-2 space-y-2 mb-4">
                     <li><span className="font-medium text-foreground">Sécurité</span> : Utilisation de cryptographie avancée pour protéger les transactions</li>
                     <li><span className="font-medium text-foreground">Accessibilité</span> : Disponible pour tous avec une simple connexion Internet</li>
                     <li><span className="font-medium text-foreground">Transparence</span> : Transactions vérifiables par tous sur la blockchain</li>
                     <li><span className="font-medium text-foreground">Rapidité</span> : Transactions internationales en quelques minutes</li>
                   </ul>
-                  <br /><br />
                   Pourquoi ont-elles de la valeur ? Prenons l'exemple du <span className="font-medium text-foreground">Bitcoin</span>, la cryptomonnaie la plus connue. 
                   Comme toute monnaie, sa valeur repose sur la <span className="font-medium text-foreground">confiance</span> que les utilisateurs lui accordent. 
                   Cette confiance est renforcée par plusieurs facteurs :

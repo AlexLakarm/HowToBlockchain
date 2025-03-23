@@ -4,7 +4,7 @@ Allow: /
 Disallow: /api/
 
 # Host
-Host: https://staminadev.com/howtoblockchain
+Host: https://howtoblockchain.staminadev.com
 
 # Sitemaps
-Sitemap: https://staminadev.com/howtoblockchain/sitemap.xml 
+Sitemap: https://howtoblockchain.staminadev.com/sitemap.xml 

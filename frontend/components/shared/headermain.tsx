@@ -72,11 +72,11 @@ const HeaderMain = () => {
                             className={`${roboto.className} text-lg absolute left-1/2 transform -translate-x-1/2 md:hidden hover:opacity-80 transition-opacity flex flex-col items-center`}
                         >
                             <div className="flex flex-col items-center">
-                                <div>
+                                <div className="whitespace-nowrap">
                                     <span className="text-2xl font-thin">How To </span>
                                     <span className="text-2xl font-bold">Blockchain</span>
                                 </div>
-                                <span className="text-sm opacity-70 -mt-1">by <span className="text-lg bg-gradient-to-r from-indigo-400 to-purple-500 text-transparent bg-clip-text font-normal">Stamina</span></span>
+                                <span className="text-sm opacity-70 -mt-1">by <span className="text-base bg-gradient-to-r from-indigo-400 to-purple-500 text-transparent bg-clip-text font-normal">Stamina</span></span>
                             </div>
                         </Link>
 

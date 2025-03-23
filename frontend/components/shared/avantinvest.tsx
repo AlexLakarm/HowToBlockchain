@@ -30,9 +30,9 @@ const AvantInvest: FC<AvantInvestProps> = () => {
     return (
         <>
             {/* Séparateur */}
-            <div className="w-full h-[1px] bg-gray-200 my-8 max-w-2xl mx-auto"></div>
+            <div className="w-full h-[1px] bg-gray-200 my-8 max-w-3xl mx-auto"></div>
 
-            <div className="flex flex-col items-center text-center max-w-2xl mx-auto px-8 md:px-12 space-y-8">
+            <div className="flex flex-col items-center text-center max-w-3xl mx-auto px-8 md:px-12 space-y-8">
                 {/* Titre */}
                 <h2 className={`${quicksand.className} mt-8 text-2xl md:text-3xl font-bold`}>
                     Avant d'investir 

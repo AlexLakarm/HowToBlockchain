@@ -30,9 +30,9 @@ const LancezVous: FC<LancezVousProps> = () => {
     return (
         <>
             {/* Séparateur */}
-            <div className="w-full h-[1px] bg-gray-200 my-8 max-w-2xl mx-auto"></div>
+            <div className="w-full h-[1px] bg-gray-200 my-8 max-w-3xl mx-auto"></div>
 
-            <div className="flex flex-col items-center text-center max-w-2xl mx-auto px-8 md:px-12 space-y-8">
+            <div className="flex flex-col items-center text-center max-w-3xl mx-auto px-8 md:px-12 space-y-8">
                 {/* Titre */}
                 <h2 className={`${quicksand.className} mt-8 text-2xl md:text-3xl font-bold`}>
                     Lancez-vous !
@@ -48,7 +48,7 @@ const LancezVous: FC<LancezVousProps> = () => {
                 </p>
 
                 {/* Bouton */}
-                <Link href="/notionsavancees" onClick={() => handleNavigation('/notionsavancees')}>
+                <Link href="/go" onClick={() => handleNavigation('/go')}>
                     <Button variant="default" className="font-bold mb-8">
                         <span className={quicksand.className}>
                             C'est parti !
